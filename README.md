@@ -59,6 +59,7 @@ the return to the concept of the controller:
 The concept of the controller was first introduced to me at the very beginning in Head First Javascript.  The concept is simple enough, there is Model, View, Controller.  Wikipedia does a good enough job of explaining it:
 
 ########################
+
 Model
     The central component of the pattern. It is the application's dynamic data structure, independent of the user interface. It directly manages the data, logic and rules of the application.
 View
@@ -68,9 +69,10 @@ Controller
 
 In addition to dividing the application into these components, the model–view–controller design defines the interactions between them.
 
-    The model is responsible for managing the data of the application. It receives user input from the controller.
-    The view renders presentation of the model in a particular format.
-    The controller responds to the user input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model.
+The model is responsible for managing the data of the application. It receives user input from the controller.
+The view renders presentation of the model in a particular format.
+The controller responds to the user input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model.
+
 ########################
 
 Within the context of our program however, the controller also refers to a folder called /controller with a file called person.js in it.  This person.js then requires another person.js from the /service subdirectory, which in turn also requires yet another person.js file from the /dao subdirectory, which itself also requires a file called db.js from the subdirectory /db.  Each of these files is small and includes the creation of a class which is what is exported from each file.
